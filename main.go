@@ -1,13 +1,14 @@
-// Problem 10172 - 개
+// Problem 10171 - 고양이
 
 package main
 
 import "fmt"
 
 func main() {
-	fmt.Println(`|\_/|`)
-	fmt.Println(`|q p|   /}`)
-	fmt.Println(`( 0 )"""\`)
-	fmt.Println("|\"^\"`    |") // '\' : escape
-	fmt.Println(`||_/=\\__|`)
+	fmt.Println(`\    /\
+ )  ( ')
+(  /  )
+ \(__)|`)
 }
+
+// 백틱 : raw string
