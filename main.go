@@ -1,22 +1,21 @@
-// Problem 9498 - 시험 성적
+// Problem 2753 - 윤년
 
 package main
 
 import "fmt"
 
 func main() {
-	var score int
-	fmt.Scan(&score)
+	var Year int
+	fmt.Scan(&Year)
 
-	if score >= 90 && score <= 100 {
-		fmt.Println("A")
-	} else if score >= 80 {
-		fmt.Println("B")
-	} else if score >= 70 {
-		fmt.Println("C")
-	} else if score >= 60 {
-		fmt.Println("D")
+	if Year%4 == 0 && Year%100 != 0 {
+		fmt.Println(1)
+	} else if Year%100 == 0 && Year%400 != 0 {
+		fmt.Println(0)
+	} else if Year%400 == 0 {
+		fmt.Println(1)
 	} else {
-		fmt.Println("F")
+		fmt.Println(0)
 	}
+
 }
